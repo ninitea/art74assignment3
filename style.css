@@ -1,6 +1,10 @@
 body {
     font-family: Arial;
-    background-image: url(https://c.pxhere.com/photos/22/a7/milky_way_space_universe_night_sky_background_astronomy_star_night-1090931.jpg!d);
+    background: url(./images/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .main-nav {
@@ -8,13 +12,25 @@ body {
     justify-content: center;
     height: 50px;
     margin: 0;
-    background-color: rgba(0,0,0,0.5);
+    background: none;
     border-radius: 20px 20px 0px 0px;
+}
+
+h1 {
+    text-shadow: 2px 2px 5px rgba(245,228,159,1);
+    text-align: center;
 }
 
 li {
     list-style: none;
     padding: 20px;
+}
+
+hr {
+    width: 150px;
+    color: rgba(245,228,159,1);
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 nav a {
@@ -26,6 +42,7 @@ nav a {
 
 nav a:hover {
     background-color: rgba(256,256,256,0.5);
+    box-shadow: 0px 0px 24px 5px rgba(245,228,159,1);
     border-radius: 10px;
     transition-duration: 1s;
 }
@@ -44,13 +61,18 @@ nav a:hover {
     font-size: 1.2em;
 }
 
+video {
+    float: right;
+    padding: 40px;
+}
+
 a {
     color: rgba(245,228,159,1);
     text-decoration: none;
 }
 
 a:hover {
-    box-shadow: 0px 0px 24px 5px rgba(245,228,159,1);
+    text-shadow: 2px 2px 5px rgba(245,228,159,1);
     border-radius: 5px;
 }
 
@@ -75,8 +97,30 @@ img:hover {
     transition-duration: 1s;
 }
 
-.testing {
+.side-pic {
     float: right;
     width: 300px;
     height: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.small-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 30px;
+}
+
+.iframe-left {
+    float: left;
+    padding: 40px;
+}
+
+.iframe-right {
+    float: right;
+    padding: 40px;
 }
